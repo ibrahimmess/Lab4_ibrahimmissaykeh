@@ -4,12 +4,12 @@ from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushBut
 def main():
     app = QApplication(sys.argv)
     w = QWidget()
-    w.setWindowTitle("PyQt Demo")
+    w.setWindowTitle("PyQt Demo — Ibrahim Missaykeh")
     layout = QVBoxLayout()
-    label = QLabel("Click the button")
+    label = QLabel("Click the button (PyQt)")
     btn = QPushButton("Say Hello")
     def on_click():
-        label.setText("Hello from PyQt!")
+        label.setText("Hello from PyQt — Ibrahim Missaykeh")
     btn.clicked.connect(on_click)
     layout.addWidget(label)
     layout.addWidget(btn)
@@ -20,4 +20,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-  
